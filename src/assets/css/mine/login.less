@@ -1,0 +1,115 @@
+@placeholder-color: #999999;
+@height:0.8064516129032258rem;
+@hyjf-color:#fc6621;
+.body-white{background: white;}
+.login{background: url(../../../../static/images/mine/login-bg.png) no-repeat;background-size:100% auto;}
+.login-container{
+  margin: 0 auto;
+  color:#404040;
+  width: 8.411290322580646rem;
+}
+  /*覆盖vux样式*/
+.weui-cell{padding: 0;}
+.weui-cells{overflow: visible !important;background-color: transparent !important;}
+.weui-cells:before,.weui-cells:after{border: 0 !important;}
+.weui-cell:before{border:0px !important}
+/*输入框相关*/
+.input-group{position: relative;}
+.input-group-1{padding-top: 66%;}
+.input-item{
+  color:#404040;
+  height: @height !important;
+  line-height: @height;
+  border:0px;
+  outline:none;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: 0.20161290322580644rem;
+  font-size: 0.3709677419354839rem;
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color:    @placeholder-color;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    @placeholder-color;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    @placeholder-color
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    @placeholder-color
+    }
+  }
+.input-item input{
+  font-size: 0.3709677419354839rem;
+  height: @height;
+  line-height: @height;
+}
+.pwd-show-hide{
+  width:0.5080645161290323rem;
+  position: relative;
+  top: 0.1rem;
+}
+.textup{
+  font-size:0.2903225806451613rem;
+  color:#fc6524;
+  position: absolute;
+  left: 0.15rem;
+  top: -0.15rem;
+}
+/*提交按钮*/
+.custom-button-submit{
+  width: 8.42741935483871rem !important;
+  height: 1.1451612903225807rem !important;
+  margin-top: 1.3548387096774193rem;
+  color: white !important;
+  font-size: 0.3870967741935484rem !important;
+  background: @hyjf-color !important;
+  letter-spacing: 0.16129032258064516rem !important;
+}
+/*忘记密码*/
+.forget-pwd{
+  float: right;
+  color: #0d4c9a;
+  font-size: 0.3225806451612903rem;
+  margin-top: 0.16129032258064516rem;
+}
+/*底部注册*/
+.get-prize{
+  margin:3.306451612903226rem auto 0;
+  width: 3.6693548387096775rem;
+  height: 1.0161290322580645rem;
+  line-height: 1.0161290322580645rem;
+}
+.get-prize img{
+  width: 1.1048387096774193rem;
+}
+.get-prize span{
+  vertical-align: text-bottom;
+  color: @hyjf-color;
+  position: relative;
+}
+.arrow-right{
+  position: relative;
+    top: 0.06rem;
+    fill:@hyjf-color;
+}
+/*返回按钮*/
+.login-back{
+  fill:white;
+  position: relative;
+  top: 0.4032258064516129rem;
+}
+/*文本框文字向上效果*/
+.fadeInUp {
+    animation: fadeInUp 0.5s;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,100%,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
