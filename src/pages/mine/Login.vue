@@ -17,7 +17,7 @@
           </x-input>
         </group>
         <span class="forget-pwd" @click="login">忘记密码?</span>
-        <x-button class="custom-button-submit" @click.native="login">登录</x-button>
+        <x-button class="custom-button-submit" @click.native="login">登 录</x-button>
         <div class="get-prize">
           <img :src="getPrizeUrl" alt="">
           <span>注册领红包 <x-icon type="ios-arrow-right" size="30" class="arrow-right"></x-icon></span>
